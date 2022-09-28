@@ -23,7 +23,11 @@ export default {
   methods:{
     addOne(){
       // this.$store.state.counter++;
-      this.$store.commit("increament");
+      // this.$store.commit("increament",{value:10});
+      this.$store.commit({
+        type:"increament",
+        value:20,
+      });
     }
   }
 };
