@@ -15,6 +15,19 @@ const store = createStore({
         state.counter += payloads.value;
     },
   },
+  getters:{
+      favCounter(state,getters){
+          if(state.counter==100){
+              return 100;
+          }
+          else{
+                getters.normalIncreament;
+          }
+      },
+      normalIncreament(state) {
+        return state.counter*20;
+    },
+  }
 });
 
 app.use(store);

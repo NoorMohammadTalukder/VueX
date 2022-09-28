@@ -3,17 +3,20 @@
     <!-- <h3>{{counter}}</h3> -->
     <the-counter></the-counter>
     <button @click="addOne">Add 1</button>
+    <fav-counter></fav-counter>
   </base-container>
 </template>
 
 <script>
 import BaseContainer from './components/BaseContainer.vue';
-import TheCounter from './components/TheCounter.vue'
+import TheCounter from './components/TheCounter.vue';
+import FavCounter from './components/FavCounter.vue';
 
 export default {
   components: {
     BaseContainer,
-    TheCounter
+    TheCounter,
+    FavCounter,
   },
   computed:{
     counter(){
